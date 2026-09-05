@@ -1,4 +1,3 @@
-HEAD
 venv/
 .venv/ 
 __pycache__/
@@ -223,4 +222,3 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
-refs/rewritten/merge-conflict-lösen-
