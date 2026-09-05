@@ -1,0 +1,23 @@
+
+Erstmal 2D!?
+
+Ich hätte erstmal gesagt eine begrenzte menge an teilchen die sich in der simulation bewegen sollen.
+simuliert man das in teilchen? Oder räumen?
+
+
+- Ausgehend von Punkt x (dem Ventilator) sollen die warme Luft Objekte dann in den Ofen schießen... 
+    -> Im Richtungsparameter ~ gleich aber mit rand. kleinen unterschieden ...
+    -> Abkühlung durch abrieb an der Luft ....
+        -> auswirkung von abrieb simulieren? also wärme übersetzung?
+
+- Warme luft steigt auf richtig? 
+    -> Erdanziehungsfaktor=?
+
+- Die Ofenwand / Metall wird ja langsamer warm als die Luft ... wie könnte ich das implementieren?
+    -> Hitzeübertragung ... wie das korrekt implementieren ...? Formel? Mathe?
+
+
+
+
+
+- visualisierung mit tkinter
