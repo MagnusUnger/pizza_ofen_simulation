@@ -1,23 +1,36 @@
 
-Erstmal 2D!?
+Erstmal 2D -> Yup! 
 
-Ich hätte erstmal gesagt eine begrenzte menge an teilchen die sich in der simulation bewegen sollen.
-simuliert man das in teilchen? Oder räumen?
+Finite-Differenz-Methode (FDM) um Pizza Ofen zu simulieren.
+
+- Ich kann das Volumen des Ofen in kleine 4ecke aufteilen
+- Mit der Euler-Diskretisierung der Wärmeleitungsgleichung (Tneu​=T+α⋅Δt⋅∇2T) die räumliche verteilung von Wärme simulieren
+
+(Später: Strahlung und Konvektion? -> um die drei konzepte des Wärmetransportes verwendet zu haben ... )
+
+Ventilator (später evtl. noch Heizelement dazu?) als Wärmequelle programmieren.
+
+Temperaturleitfähigkeit : α = α=λ/ρc p(untergestellt)
+    λ  = Wärmeleitfähigkeit des Materials
+    p  = Dichte
+    cp = spezifische Wärmekapazität
+
+-> Damit kann ich den Räumen ein Element/ Gemischbezeichnung geben ...
+("N₂ + O₂ + Ar + CO₂" = Luft ...)
+ 
+
+Drucklage mit einbeziehen...? "Warme Luft steigt nach Oben ... " #natürliche Konvektion
+(Später)
+    -> Dazu, proportionalität des thermischen Auftriebs gefunden: FAuftrieb​∝g⋅(ρkalt​−ρwarm​)
+            Würde g (Erdanziehung miteinbeziehen ...)
+
+    Vermutlich bei der Konvektion dann Sinnvoll...
 
 
-- Ausgehend von Punkt x (dem Ventilator) sollen die warme Luft Objekte dann in den Ofen schießen... 
-    -> Im Richtungsparameter ~ gleich aber mit rand. kleinen unterschieden ...
-    -> Abkühlung durch abrieb an der Luft ....
-        -> auswirkung von abrieb simulieren? also wärme übersetzung?
 
-- Warme luft steigt auf richtig? 
-    -> Erdanziehungsfaktor=?
+Tkinter Überlegung: Auf der linken Seite eine Controlbar für Temperatur der Wärmequelle, Heizdauer, Start- / Pause / Reset,
+                        Höhe des Blechs, evtl. Material Ofenwand.
 
-- Die Ofenwand / Metall wird ja langsamer warm als die Luft ... wie könnte ich das implementieren?
-    -> Hitzeübertragung ... wie das korrekt implementieren ...? Formel? Mathe?
-
-
-
-
-
-- visualisierung mit tkinter
+                    Und auf der rechten Seite ein 2D Gitter mit Farbdarstellung und "point_pizza"
+                        (Mag den Begriff point_pizza ... erinnert mich an Point Nemo...)
+            
