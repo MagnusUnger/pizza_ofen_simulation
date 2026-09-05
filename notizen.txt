@@ -1,2 +1,6 @@
 python3 -m venv venv    = command um venv einzurichten
-venv/Scripts/activate   = um venv zu aktivieren
+
+venv/Scripts/activate       = um venv zu aktivieren
+source venv/bin/activate    = um venv auf Linux zu aktivieren
+
+deactivate                  = deaktiveren ...
