@@ -4,3 +4,4 @@ venv/Scripts/activate       = um venv zu aktivieren
 source venv/bin/activate    = um venv auf Linux zu aktivieren
 
 deactivate                  = deaktiveren ...
+LOL
